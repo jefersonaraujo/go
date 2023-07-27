@@ -37,7 +37,7 @@ func (o *Order) Validate() error {
 
 }
 
-func (o *Order) CalculateFinalPrince() error {
+func (o *Order) CalculateFinalPrice() error {
 	o.FinalPrice = o.Price + o.Tax
 	err := o.Validate()
 	if err != nil {
